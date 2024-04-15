@@ -1,0 +1,33 @@
+.About {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 50px 0;
+    height: 70vh;
+
+    @media (min-width: 1919px) and (max-width: 2500px) {
+        height: 40vh;
+    }
+
+
+
+    .cnt_resume {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .res_left {
+            color: var(--white);
+            line-height: 26px;
+            font-size: 1rem;
+            text-align: left;
+        }
+
+        .res_right {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+    }
+}

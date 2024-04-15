@@ -1,0 +1,15 @@
+.Title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .title_h2 {
+        color: var(--c200);
+        font-size: 2rem;
+    }
+
+    .title_desc {
+        color: var(--white);
+        font-size: 1.2rem;
+    }
+}

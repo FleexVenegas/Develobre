@@ -1,0 +1,9 @@
+.Container {
+    width: 100%;
+    background: var(--c950);
+    padding: 0 5%;
+
+    @media (min-width: 1919px) and (max-width: 2500px) {
+        padding: 0 10%;
+    }
+}
