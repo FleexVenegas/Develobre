@@ -11,7 +11,8 @@
     .cnt_left {
         grid-area: 1 / 1 / 2 / 2;
         display: flex;
-        justify-content: center;
+        // justify-content: center;
+        padding-top: 40px;
         flex-direction: column;
         gap: 20px;
         align-items: center;
@@ -37,10 +38,11 @@
         grid-area: 1 / 2 / 2 / 3;
         display: flex;
         // align-items: center;
-        justify-content: center;
+        // justify-content: center;
         padding-left: 40px;
         flex-direction: column;
         gap: 15px;
+        padding-top: 40px;
 
         .center_title {
             color: var(--c200);

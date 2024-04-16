@@ -11,19 +11,19 @@ import "./Footer.scss";
 import Facebook from "../../../assets/icons/facebook.svg";
 import Instagram from "../../../assets/icons/instagram.svg";
 import Linkedin from "../../../assets/icons/linkedin.svg";
-import Logo from '../../../assets/images/develobre_blanco.webp'
+import Logo from "../../../assets/images/develobre_blanco.webp";
 
 const Footer: React.FC<PropsChildren> = ({ className }) => {
     const network = [
-        { id: 1, icon: Facebook, url: "" },
-        { id: 2, icon: Instagram, url: "#" },
-        { id: 3, icon: Linkedin, url: "#" },
+        { id: 1, icon: Facebook, url: "https://www.facebook.com" },
+        { id: 2, icon: Instagram, url: "https://www.instagram.com" },
+        { id: 3, icon: Linkedin, url: "https://www.linkedin.com" },
     ];
 
     const information = [
         { id: 1, text: "FAQ", url: "/faq" },
-        { id: 2, text: "Legal warning", url: "#" },
-        { id: 3, text: "Privacy policies", url: "#" },
+        { id: 2, text: "Legal warning", url: "/legal-warning" },
+        { id: 3, text: "Privacy policies", url: "/privacy-policies" },
     ];
 
     return (
@@ -34,12 +34,9 @@ const Footer: React.FC<PropsChildren> = ({ className }) => {
                 </h2>
                 <div className="cnt_icon_network">
                     {network.map((_, idx) => (
-                        <img
-                            key={idx}
-                            src={_.icon}
-                            alt=""
-                            className="icon_net"
-                        />
+                        <NavLink key={idx} to={_.url} target="_blank">
+                            <img src={_.icon} alt="" className="icon_net" />
+                        </NavLink>
                     ))}
                 </div>
             </div>
@@ -54,7 +51,9 @@ const Footer: React.FC<PropsChildren> = ({ className }) => {
                 </div>
             </div>
             <div className="cnt_right">
-                <img src={Logo} alt="" className="_logo" />
+                <NavLink to={"/"}>
+                    <img src={Logo} alt="" className="_logo" />
+                </NavLink>
             </div>
         </footer>
     );

@@ -18,6 +18,7 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        justify-content: center;
 
         .res_left {
             color: var(--white);
@@ -28,6 +29,8 @@
 
         .res_right {
             grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            justify-content: center;
         }
     }
 }

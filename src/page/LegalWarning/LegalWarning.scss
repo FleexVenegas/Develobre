@@ -1,13 +1,14 @@
-.FAQ {
+.LegalWarning {
     width: 100%;
     min-height: calc(100vh - 80px);
     display: flex;
     position: relative;
     align-items: center;
-    
-    .cnt_faq {
+    // padding: 30px 0;
+
+    .cnt_legal {
         width: 90vw;
-        height: 80vh;
+        margin: 40px 0;
         background: rgb(6, 16, 67);
         background: linear-gradient(309deg, rgba(6, 16, 67, 1) 19%, rgba(91, 6, 110, 1) 100%);
         border-radius: 20px;
@@ -18,10 +19,28 @@
         position: relative;
         overflow: hidden;
 
-        .faq_mark{
+        .subtilt {
+            font-size: 1.1rem;
+            color: var(--white);
+        }
+
+        .in_info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .sun_span {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+        }
+
+        .bg_mark {
             position: absolute;
             bottom: 0;
             right: 0;
         }
     }
+
 }

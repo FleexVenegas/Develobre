@@ -3,6 +3,7 @@
     height: 70vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 100px;
     position: relative;
     z-index: 1;
@@ -16,7 +17,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 15px;
-        width: 50%;
+        width: 100%;
 
     }
 

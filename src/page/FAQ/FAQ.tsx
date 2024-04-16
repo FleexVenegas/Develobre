@@ -8,6 +8,7 @@ import ReturnButton from "../../components/atoms/ReturnButton/ReturnButton";
 import Container from "../../components/molecules/Container/Container";
 import Accordion from "../../components/organisms/Accordion/Accordion";
 import Title from "../../components/atoms/Title/Title";
+import Mark from "../../components/atoms/Mark/Mark";
 
 const FAQ = () => {
     useEffect(() => {
@@ -53,10 +54,11 @@ const FAQ = () => {
 
     return (
         <Container className="FAQ">
-            <ReturnButton />
+            <ReturnButton url="/" />
             <div className="cnt_faq">
                 <Title title="FAQ" />
                 <Accordion data={data} />
+                <Mark className="faq_mark"/>
             </div>
         </Container>
     );

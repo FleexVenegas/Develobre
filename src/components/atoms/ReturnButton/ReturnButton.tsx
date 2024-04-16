@@ -1,16 +1,26 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+//Styles
 import "./ReturnButton.scss";
 
 //Assets
 import ArrowLeft from "../../../assets/icons/arrow-left.svg";
-import { useNavigate } from "react-router-dom";
 
-const ReturnButton = () => {
+//Interfaces
+interface ReturnProps {
+    className?: string;
+    url?: string;
+}
 
-
-    const navigate = useNavigate()
+const ReturnButton: React.FC<ReturnProps> = ({ url = "", className }) => {
+    const navigate = useNavigate();
 
     return (
-        <button className="ReturnButton" onClick={() => navigate('/')}>
+        <button
+            className={`ReturnButton ${className}`}
+            onClick={() => navigate(url)}
+        >
             <img src={ArrowLeft} alt="" className="img-b" />
         </button>
     );
