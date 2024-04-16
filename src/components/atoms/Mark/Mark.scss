@@ -9,8 +9,6 @@
 
     .star {
         position: absolute;
-        width: 2px;
-        height: 2px;
         border-radius: 100px;
         background: var(--white);
         animation: moveStar 7s infinite linear; // Agrega la animación aquí

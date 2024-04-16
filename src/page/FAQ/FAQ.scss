@@ -1,0 +1,20 @@
+.FAQ {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    position: relative;
+    align-items: center;
+    
+    .cnt_faq {
+        width: 90vw;
+        height: 80vh;
+        background: rgb(6, 16, 67);
+        background: linear-gradient(309deg, rgba(6, 16, 67, 1) 19%, rgba(91, 6, 110, 1) 100%);
+        border-radius: 20px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+}

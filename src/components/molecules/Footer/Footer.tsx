@@ -21,7 +21,7 @@ const Footer: React.FC<PropsChildren> = ({ className }) => {
     ];
 
     const information = [
-        { id: 1, text: "FAQ", url: "#" },
+        { id: 1, text: "FAQ", url: "/faq" },
         { id: 2, text: "Legal warning", url: "#" },
         { id: 3, text: "Privacy policies", url: "#" },
     ];

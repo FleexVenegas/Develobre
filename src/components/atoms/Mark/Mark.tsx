@@ -1,9 +1,16 @@
-//Styles
 import React from "react";
-import "./Mark.scss";
-import { PropsChildren } from "../../../interfaces/interfaces.interface";
 
-const Mark: React.FC<PropsChildren> = ({ className }) => {
+
+//Styles
+import "./Mark.scss";
+
+//Interface
+interface MarkProps{
+    className?: string
+    size?: number
+}
+
+const Mark: React.FC<MarkProps> = ({ className, size = 2 }) => {
     const elements = Array.from({ length: 50 }, (_, index) => ({
         id: index + 1,
         top: `${Math.random() * 100}%`,
@@ -20,6 +27,8 @@ const Mark: React.FC<PropsChildren> = ({ className }) => {
                         top: _.top,
                         left: _.left,
                         animationDirection: _.moveUp ? "normal" : "reverse",
+                        width: size,
+                        height: size
                     }}
                 ></div>
             ))}

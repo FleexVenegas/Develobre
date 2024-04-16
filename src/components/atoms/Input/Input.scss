@@ -1,0 +1,34 @@
+.Input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .span_title {
+        font-size: 1rem;
+        color: var(--white);
+        margin-left: 10px;
+    }
+
+    .input-input {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background: #D4EAFF;
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        appearance: textfield;
+        -moz-appearance: textfield;
+    }
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 
 //Interfaces
@@ -11,10 +10,13 @@ import "./Header.scss";
 import Logo from "../../../assets/images/develobre_blanco.webp";
 
 const Header: React.FC<PropsChildren> = ({ className }) => {
+
     const optionLink = [
-        { id: 1, text: "Home", link: "#" },
-        { id: 2, text: "Contact", link: "#" },
+        { id: 1, text: "Home", link: "/" },
+        { id: 2, text: "Contact", link: "/contact" },
     ];
+
+   
     return (
         <header className={`Header ${className}`}>
             <div className="cnt_logo">

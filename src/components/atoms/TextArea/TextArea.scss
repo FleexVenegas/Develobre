@@ -1,0 +1,25 @@
+.TextArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .span_title {
+        font-size: 1rem;
+        color: var(--white);
+        margin-left: 10px;
+    }
+
+    .input-textare {
+        width: 100%;
+        height: 140px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background: #D4EAFF;
+        padding: 10px;
+        font-size: 1rem;
+        font-family: "Metropolis";
+        resize: none;
+    }
+}
