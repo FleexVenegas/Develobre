@@ -20,6 +20,11 @@
         position: relative;
         overflow: hidden;
 
+        @media (max-width: 768px) {
+            margin-top: 60px;
+            padding: 30px 5px;
+        }
+
         .cnt_info{
             width: 100%;
             display: flex;

@@ -7,7 +7,15 @@
     height: 70vh;
 
     @media (min-width: 1919px) and (max-width: 2500px) {
-        height: 40vh;
+        height: 60vh;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+        height: auto;
+        padding: 50px 0;
     }
 
     .be-left {
@@ -15,9 +23,17 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
         
         .map-img{
             width: 80%;
+
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
 

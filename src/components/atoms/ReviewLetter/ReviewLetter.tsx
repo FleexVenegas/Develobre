@@ -28,8 +28,8 @@ const ReviewLetter = () => {
     return (
         <>
             {reviews.map((_, idx) => (
-                <div className="ReviewLetter">
-                    <div key={idx} className="cnt_revi">
+                <div key={idx} className="ReviewLetter">
+                    <div className="cnt_revi">
                         <Description>{_.review}</Description>
                         <h2 className="re_name">{_.name}</h2>
                     </div>

@@ -23,7 +23,7 @@ const About = () => {
                 </div>
             </div>
             <div className="res_right">
-                <Mark />
+                <Mark className="about_mark" />
             </div>
         </div>
     );

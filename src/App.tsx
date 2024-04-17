@@ -7,6 +7,7 @@ import Contact from "./page/Contact/Contact";
 import FAQ from "./page/FAQ/FAQ";
 import LegalWarning from "./page/LegalWarning/LegalWarning";
 import PrivacyPolicies from "./page/PrivacyPolicies/PrivacyPolicies";
+import Learn from "./page/Learn/Learn";
 
 function App() {
     return (
@@ -24,6 +25,10 @@ function App() {
                         <Route
                             path="/privacy-policies"
                             element={<PrivacyPolicies />}
+                        />
+                        <Route
+                            path="/learn-more"
+                            element={<Learn />}
                         />
                     </Routes>
                 </Layout>

@@ -1,3 +1,6 @@
+import { useNavigate } from "react-router-dom";
+
+//Components
 import Button from "../../components/atoms/Button/Button";
 import Description from "../../components/atoms/Description/Description";
 import Title from "../../components/atoms/Title/Title";
@@ -7,6 +10,8 @@ import "./Calendar.scss";
 import CalendarImg from "../../assets/images/calendar.png";
 
 const Calendar = () => {
+
+    const navigate = useNavigate()
     return (
         <div className="Calendar">
             <div className="cal-left">
@@ -21,7 +26,7 @@ const Calendar = () => {
                         access information about your services at any time, from
                         anywhere.
                     </Description>
-                    <Button text="Start" />
+                    <Button text="Start" className="cal_btn" onClick={() => navigate("/contact")} />
                 </div>
             </div>
         </div>

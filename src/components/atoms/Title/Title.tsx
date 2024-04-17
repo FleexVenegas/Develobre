@@ -6,14 +6,19 @@ import "./Title.scss";
 interface TitleProps {
     title: string;
     description?: string;
+    className?: string;
 }
 
-const Title: React.FC<TitleProps> = ({ title, description }) => {
+const Title: React.FC<TitleProps> = ({
+    title,
+    description,
+    className = "",
+}) => {
     return (
-        <div className="Title">
+        <div className={`Title ${className}`}>
             <h2 className="title_h2">{title}</h2>
             {description && <p className="title_desc">{description}</p>}
-        </div>
+        </div>  
     );
 };
 

@@ -11,6 +11,11 @@
         padding: 30px 10%;
     }
 
+    @media (max-width: 768px) {
+        justify-content: center;
+        gap: 40px;
+    }
+
     .cnt_acrticle {
         width: 300px;
         border-radius: 8px;

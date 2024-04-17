@@ -7,12 +7,25 @@
     justify-content: center;
     border-radius: 8px;
 
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 50px 0;
+    }
+
 
     .Carousel-wrapper {
         width: 100%;
         display: flex;
         justify-content: space-between;
         padding: 0 30px;
+
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: unset;
+            gap: 150px;
+        }
 
         .span_word {
             height: 100%;
@@ -21,11 +34,11 @@
             cursor: pointer;
             position: relative;
 
-            .span_show{
+            .span_show {
                 opacity: 1;
                 transition: all 0.5s;
 
-                &.span_hidden{
+                &.span_hidden {
                     opacity: 0;
                 }
             }
@@ -53,7 +66,7 @@
                 opacity: 0;
                 transition: width 0.5s ease, height 0.5s ease;
 
-                &.show_modal{
+                &.show_modal {
                     opacity: 1;
                     height: 220px;
                     padding: 10px;
@@ -68,7 +81,7 @@
                     opacity: 0;
                     transition: all 5s;
 
-                    &.show_title{
+                    &.show_title {
                         opacity: 1;
                     }
                 }
@@ -80,7 +93,7 @@
                     opacity: 0;
                     transition: all 5s;
 
-                    &.show_desc{
+                    &.show_desc {
                         opacity: 1;
                     }
                 }

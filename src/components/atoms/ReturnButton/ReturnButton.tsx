@@ -13,7 +13,7 @@ interface ReturnProps {
     url?: string;
 }
 
-const ReturnButton: React.FC<ReturnProps> = ({ url = "", className }) => {
+const ReturnButton: React.FC<ReturnProps> = ({ url = "", className = "" }) => {
     const navigate = useNavigate();
 
     return (

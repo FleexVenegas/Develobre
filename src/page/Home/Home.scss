@@ -7,6 +7,14 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 50px 0;
+        gap: 50px;
+    }
+
     .home_left {
         grid-area: 1 / 1 / 2 / 2;
         width: 100%;
@@ -27,6 +35,11 @@
                 font-weight: bold;
                 color: var(--white);
                 text-align: left;
+
+                @media (max-width: 768px) {
+                    font-size: 3rem;
+                    text-align: center;
+                }
 
                 .span-level {
                     font-family: cursive;
@@ -58,6 +71,12 @@
                     }
                 }
             }
+
+            .btn_home {
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -80,12 +99,21 @@
             background: radial-gradient(circle, rgba(91, 6, 110, 1) 74%, rgba(6, 16, 67, 1) 100%);
             z-index: 1;
             filter: blur(70px);
+
+            @media (max-width: 768px) {
+                width: 90%;
+                height: 400px;
+            }
         }
 
         .img_com {
             width: 450px;
             position: static;
             z-index: 2;
+
+            @media (max-width: 768px) {
+                width: 300px;
+            }
         }
     }
 
@@ -104,6 +132,11 @@
 .Cnt_reviews {
     background: rgb(91, 6, 110);
     background: linear-gradient(214deg, rgba(91, 6, 110, 1) 0%, rgba(6, 16, 67, 1) 42%) !important;
+
+    @media (min-width: 1919px) and (max-width: 2500px) {
+        background: linear-gradient(200deg, rgba(91, 6, 110, 1) 0%, rgba(6, 16, 67, 1) 42%) !important;
+
+    }
 }
 
 .btn_scroll {
@@ -116,8 +149,12 @@
     display: none;
     pointer-events: none;
     z-index: 10;
-    
-    &.showBtn{
+
+    @media (max-width: 768px) {
+        right: 20px;
+    }
+
+    &.showBtn {
         display: flex;
         pointer-events: all;
     }
@@ -127,7 +164,7 @@
         height: 100%;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             fill: red !important;
         }
     }

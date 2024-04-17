@@ -9,7 +9,13 @@
     z-index: 1;
 
     @media (min-width: 1919px) and (max-width: 2500px) {
-        height: 40vh;
+        height: 60vh;
+    }
+
+    @media (max-width: 768px) {
+        height: auto;
+        padding: 50px 0;
+        overflow: hidden;
     }
 
     .in_servi {

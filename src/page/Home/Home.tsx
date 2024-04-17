@@ -14,6 +14,7 @@ import Reviews from "../Reviews/Reviews";
 //Assets
 import ImageSin from "../../assets/images/imag1sin.png";
 import ArrowUp from "../../assets/icons/arrow_up.svg";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -37,6 +38,9 @@ const Home = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+    const navigate = useNavigate();
+
     return (
         <>
             <Container>
@@ -47,7 +51,11 @@ const Home = () => {
                                 Take your business to the next{" "}
                                 <span className="span-level">LEVEL</span>
                             </h1>
-                            <Button text="Aprender más" />
+                            <Button
+                                className="btn_home"
+                                text="Learn more"
+                                onClick={() => navigate("/learn-more")}
+                            />
                         </div>
                     </div>
                     <div className="home_right">
@@ -63,10 +71,10 @@ const Home = () => {
             <Container>
                 <Benefits />
             </Container>
-            <Container>
+             <Container>
                 <Services />
             </Container>
-            <Container className="Cnt_calendar">
+             <Container className="Cnt_calendar">
                 <Calendar />
             </Container>
             <Container className="Cnt_reviews">

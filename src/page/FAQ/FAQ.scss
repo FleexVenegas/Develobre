@@ -18,6 +18,11 @@
         position: relative;
         overflow: hidden;
 
+        @media (max-width: 768px) {
+            padding: 30px 5px;
+            margin-top: 60px;
+        }
+
         .faq_mark{
             position: absolute;
             bottom: 0;

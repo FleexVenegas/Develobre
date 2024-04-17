@@ -8,7 +8,15 @@
     height: 70vh;
 
     @media (min-width: 1919px) and (max-width: 2500px) {
-        height: 40vh;
+        height: 60vh;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 40px;
+        height: auto;
+        padding: 50px 0;
     }
 
     .cal-left {
@@ -30,7 +38,11 @@
             z-index: 1;
             filter: blur(50px);
             -webkit-filter: blur(50px);
-            
+
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
 
         }
 
@@ -38,6 +50,10 @@
             position: static;
             z-index: 2;
             width: 350px;
+
+            @media (max-width: 768px) {
+                width: 250px;
+            }
         }
     }
 
@@ -48,12 +64,22 @@
         flex-direction: column;
         gap: 40px;
 
+        @media (max-width: 768px) {
+            gap: 15px;
+        }
+
         .cnt_desc {
             width: 100%;
 
             display: flex;
             flex-direction: column;
             gap: 25px;
+
+            .cal_btn {
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
 
         }
     }

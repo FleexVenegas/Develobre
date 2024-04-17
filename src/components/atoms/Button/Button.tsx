@@ -8,11 +8,12 @@ interface ButtonProps {
     className?: string;
     text: string;
     type?: "button" | "submit" | "reset";
+    onClick?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ className, text, type }) => {
+const Button: React.FC<ButtonProps> = ({ className, text, type, onClick }) => {
     return (
-        <button className={`Button ${className}`} type={type}>
+        <button className={`Button ${className}`} type={type} onClick={onClick}>
             {text}
         </button>
     );

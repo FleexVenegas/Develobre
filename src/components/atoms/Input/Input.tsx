@@ -25,6 +25,7 @@ const Input: React.FC<InputProps> = ({
                 name={name}
                 value={value}
                 onChange={onChange}
+                required
             />
         </div>
     );

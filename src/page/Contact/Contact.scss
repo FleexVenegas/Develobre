@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
 
+    @media (max-width: 768px) {
+        height: auto;
+    }
+
     .co_int {
         width: 90vw;
         height: 80vh;
@@ -18,32 +22,128 @@
         grid-column-gap: 0px;
         grid-row-gap: 0px;
 
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 50px 10px;
+            height: auto;
+            gap: 50px;
+        }
+
         .co_left {
             grid-area: 1 / 1 / 2 / 2;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             gap: 20px;
 
-            .form{
+            .contact_title {
+                @media (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+            .form {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
 
-                .cnt_email{
+                .cnt_email {
                     display: flex;
                     gap: 20px;
                 }
 
-                .cnt-button{
+                .cnt-button {
                     width: 100%;
                     display: flex;
                     justify-content: flex-start;
+                }
+
+                .cont_btn {
+                    @media (max-width: 768px) {
+                        width: 100%;
+                    }
                 }
             }
         }
 
         .co_right {
             grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .right_title {
+                display: none;
+
+                @media (max-width: 768px) {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+
+            .desc_cont {
+                width: 70%;
+                // background: red;
+                padding: 20px;
+                position: relative;
+
+
+                @media (max-width: 768px) {
+                    padding: 20px 0;
+                    width: 100%;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20%;
+                    height: 2px;
+                    background: #fff;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 20%;
+                    height: 2px;
+                    background: #fff;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    line-height: 40px;
+                    text-align: center;
+                    background: rgb(91, 6, 110);
+                    background: linear-gradient(309deg, rgba(44, 97, 255, 1) 7%, rgba(255, 255, 255, 1) 100%);
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+
+                    @media (max-width: 768px) {
+                        font-size: 1.1rem;
+                        line-height: 26px;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .cont_mark {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
         }
     }
 }
