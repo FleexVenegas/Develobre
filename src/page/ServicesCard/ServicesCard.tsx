@@ -1,4 +1,3 @@
-import React from "react";
 
 //Assets
 import Figma from "../../assets/icons/figma.svg";
