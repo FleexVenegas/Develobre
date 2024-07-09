@@ -9,6 +9,8 @@ import LegalWarning from "./page/LegalWarning/LegalWarning";
 import PrivacyPolicies from "./page/PrivacyPolicies/PrivacyPolicies";
 import Learn from "./page/Learn/Learn";
 
+//Es un comentario
+
 function App() {
     return (
         <>
